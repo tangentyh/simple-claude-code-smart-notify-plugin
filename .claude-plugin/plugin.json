@@ -1,0 +1,5 @@
+{
+  "name": "smart-notify",
+  "description": "Toggle between smart (focus-aware) and always notification modes",
+  "version": "1.0.0"
+}

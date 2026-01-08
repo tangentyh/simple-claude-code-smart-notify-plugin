@@ -1,0 +1,33 @@
+{
+  "name": "simple-claude-code-smart-notify-marketplace",
+  "owner": {
+    "name": "tangentyh"
+  },
+  "metadata": {
+    "description": "Smart notifications marketplace for Claude Code (macOS)",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "smart-notify",
+      "source": "./",
+      "description": "Toggle between smart (focus-aware) and always notification modes for macOS",
+      "version": "1.0.0",
+      "author": {
+        "name": "mcmatms"
+      },
+      "repository": "https://github.com/mcmatms/simple-claude-code-smart-notify-plugin",
+      "license": "MIT",
+      "keywords": [
+        "notifications",
+        "alerts",
+        "productivity",
+        "macos",
+        "hooks",
+        "focus"
+      ],
+      "category": "productivity",
+      "tags": ["notifications", "macos", "productivity", "hooks"]
+    }
+  ]
+}

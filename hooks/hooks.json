@@ -1,0 +1,43 @@
+{
+  "hooks": {
+    "Notification": [
+      {
+        "matcher": "permission_prompt",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$CLAUDE_PLUGIN_ROOT/scripts/notify.sh\" 'Permission required to proceed' 'Claude Code - Permission' 'Basso'"
+          }
+        ]
+      },
+      {
+        "matcher": "idle_prompt",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$CLAUDE_PLUGIN_ROOT/scripts/notify.sh\" 'Waiting for your input' 'Claude Code - Idle' 'Glass'"
+          }
+        ]
+      },
+      {
+        "matcher": "elicitation_dialog",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$CLAUDE_PLUGIN_ROOT/scripts/notify.sh\" 'MCP tool needs input' 'Claude Code - Input Needed' 'Purr'"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$CLAUDE_PLUGIN_ROOT/scripts/notify.sh\" 'Task completed' 'Claude Code - Done' 'Hero'"
+          }
+        ]
+      }
+    ]
+  }
+}
