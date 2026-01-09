@@ -48,9 +48,9 @@ The plugin notifies you on these events:
 | Event | Title | Sound |
 |-------|-------|-------|
 | Permission required | Claude Code - Permission | Basso |
-| Waiting for input (60s+ idle) | Claude Code - Idle | Glass |
 | MCP tool needs input | Claude Code - Input Needed | Purr |
 | Task completed | Claude Code - Done | Hero |
+<!-- | Waiting for input (60s+ idle) | Claude Code - Idle | Glass | -->
 
 ## Configuration
 
