@@ -19,7 +19,9 @@ claude --plugin-dir /path/to/simple-claude-code-smart-notify-plugin
 ### Option 2: Add as marketplace
 
 ```bash
-/plugin marketplace add tangentyh/simple-claude-code-smart-notify-marketplace
+/plugin marketplace add https://github.com/tangentyh/simple-claude-code-smart-notify-plugin
+# or
+# /plugin marketplace add tangentyh/simple-claude-code-smart-notify-marketplace
 /plugin install smart-notify@simple-claude-code-smart-notify-marketplace
 ```
 
