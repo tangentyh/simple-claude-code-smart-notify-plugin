@@ -7,6 +7,4 @@ allowed-tools: Bash
 
 Run this command to toggle between smart and always notification modes:
 
-```bash
-bash "$(dirname "$(dirname "$0")")/scripts/toggle.sh"
-```
+!~/.claude/plugins/cache/simple-claude-code-smart-notify-marketplace/smart-notify/1.0.0/scripts/toggle.sh
