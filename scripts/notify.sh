@@ -31,7 +31,10 @@ else
     WINDOW_TITLE=$(osascript -e 'tell application "System Events" to get name of first window of (first application process whose frontmost is true)' 2>/dev/null)
 
     # Case-insensitive check: only notify if project name NOT in window title
-    if [[ -z "$PROJECT_NAME" ]] || [[ ! "${WINDOW_TITLE,,}" == *"${PROJECT_NAME,,}"* ]]; then
+    WINDOW_TITLE_LOWER=$(echo "$WINDOW_TITLE" | tr '[:upper:]' '[:lower:]')
+    PROJECT_NAME_LOWER=$(echo "$PROJECT_NAME" | tr '[:upper:]' '[:lower:]')
+
+    if [[ -z "$PROJECT_NAME" ]] || [[ ! "$WINDOW_TITLE_LOWER" == *"$PROJECT_NAME_LOWER"* ]]; then
         show_notification
     fi
 fi
